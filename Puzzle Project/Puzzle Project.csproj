@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1EF924A4-8770-44FE-AC25-C281D55D6CF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Puzzle_Project</RootNamespace>
+    <AssemblyName>Puzzle Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level2.Designer.cs">
+      <DependentUpon>level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="level3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level3.Designer.cs">
+      <DependentUpon>level3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelOne.Designer.cs">
+      <DependentUpon>LevelOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelsForm.Designer.cs">
+      <DependentUpon>LevelsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartBtn.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level2.resx">
+      <DependentUpon>level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level3.resx">
+      <DependentUpon>level3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelOne.resx">
+      <DependentUpon>LevelOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelsForm.resx">
+      <DependentUpon>LevelsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Typeform-Blog-BlackFriday-Cover-AskAwesomely.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tom001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tom-and-jerry-warner-bros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_010.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_013.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_014.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_015.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_016.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_017.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_018.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_019.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_020.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_022.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_023.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_025.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_026.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_027.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_028.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_029.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_030.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_031.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_032.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_033.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_034.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_035.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_036.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_037.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_038.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_039.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_040.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_041.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_042.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_043.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_044.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_045.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_046.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_047.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_048.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_049.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img9.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
